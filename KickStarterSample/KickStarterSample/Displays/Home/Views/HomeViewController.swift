@@ -9,7 +9,7 @@
 import UIKit
 
 /// ホーム画面のViewControllerです。
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, StoryboardInstantiable {
 
     // MARK: - LifeCycle Method
     
@@ -35,4 +35,15 @@ class HomeViewController: UIViewController {
         
     }
 
+}
+
+extension HomeViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        show(DetailViewController.self, sender: nil, configuration: { (vc) in
+            vc.hoge = "Fuga"
+        })
+    }
+    
 }
