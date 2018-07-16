@@ -19,6 +19,9 @@
 		53C40C1820FC62DB00AB081D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C40C1720FC62DB00AB081D /* SettingsViewController.swift */; };
 		53F20B3620FC68E60090AE8B /* MainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F20B3520FC68E50090AE8B /* MainTabbarController.swift */; };
 		53F20B3B20FC6C0C0090AE8B /* MainTabbarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F20B3A20FC6C0C0090AE8B /* MainTabbarController.storyboard */; };
+		53F20B3E20FC744E0090AE8B /* HomeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F20B3D20FC744E0090AE8B /* HomeListCell.swift */; };
+		53F20B4120FC74800090AE8B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F20B4020FC74800090AE8B /* HomeViewModel.swift */; };
+		53F20B4420FC74A20090AE8B /* HomeViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F20B4320FC74A20090AE8B /* HomeViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		53C40C1720FC62DB00AB081D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		53F20B3520FC68E50090AE8B /* MainTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarController.swift; sourceTree = "<group>"; };
 		53F20B3A20FC6C0C0090AE8B /* MainTabbarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTabbarController.storyboard; sourceTree = "<group>"; };
+		53F20B3D20FC744E0090AE8B /* HomeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListCell.swift; sourceTree = "<group>"; };
+		53F20B4020FC74800090AE8B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		53F20B4320FC74A20090AE8B /* HomeViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +98,6 @@
 				535E7EA320FC547100A49000 /* AppDelegate.swift */,
 				535E7EC320FC5BFD00A49000 /* Displays */,
 				53C40C1420FC604E00AB081D /* Resources */,
-				535E7EAF20FC547300A49000 /* Info.plist */,
 			);
 			path = KickStarterSample;
 			sourceTree = "<group>";
@@ -139,6 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				535E7ECD20FC5E2700A49000 /* Views */,
+				53F20B3F20FC74600090AE8B /* ViewModels */,
+				53F20B4220FC74870090AE8B /* DataSources */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -179,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				53C40C1520FC62B700AB081D /* HomeViewController.swift */,
+				53F20B3C20FC741D0090AE8B /* Cells */,
 				535E7ECE20FC5E2C00A49000 /* Interface */,
 			);
 			path = Views;
@@ -212,10 +220,35 @@
 		53C40C1420FC604E00AB081D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				535E7EAF20FC547300A49000 /* Info.plist */,
 				535E7EAC20FC547300A49000 /* LaunchScreen.storyboard */,
 				535E7EAA20FC547300A49000 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		53F20B3C20FC741D0090AE8B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				53F20B3D20FC744E0090AE8B /* HomeListCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		53F20B3F20FC74600090AE8B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				53F20B4020FC74800090AE8B /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		53F20B4220FC74870090AE8B /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				53F20B4320FC74A20090AE8B /* HomeViewDataSource.swift */,
+			);
+			path = DataSources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +357,9 @@
 			files = (
 				535E7EA620FC547100A49000 /* ViewController.swift in Sources */,
 				535E7EA420FC547100A49000 /* AppDelegate.swift in Sources */,
+				53F20B4420FC74A20090AE8B /* HomeViewDataSource.swift in Sources */,
+				53F20B4120FC74800090AE8B /* HomeViewModel.swift in Sources */,
+				53F20B3E20FC744E0090AE8B /* HomeListCell.swift in Sources */,
 				53F20B3620FC68E60090AE8B /* MainTabbarController.swift in Sources */,
 				53C40C1620FC62B700AB081D /* HomeViewController.swift in Sources */,
 				53C40C1820FC62DB00AB081D /* SettingsViewController.swift in Sources */,
@@ -489,7 +525,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DNFCB4KFUA;
-				INFOPLIST_FILE = KickStarterSample/Info.plist;
+				INFOPLIST_FILE = KickStarterSample/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -509,7 +545,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DNFCB4KFUA;
-				INFOPLIST_FILE = KickStarterSample/Info.plist;
+				INFOPLIST_FILE = KickStarterSample/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -528,7 +564,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = KickStarterSampleTests/Info.plist;
+				INFOPLIST_FILE = KickStarterSampleTests/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -548,7 +584,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = KickStarterSampleTests/Info.plist;
+				INFOPLIST_FILE = KickStarterSampleTests/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
