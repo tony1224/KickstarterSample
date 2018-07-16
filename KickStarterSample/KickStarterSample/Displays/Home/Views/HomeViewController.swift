@@ -9,7 +9,7 @@
 import UIKit
 
 /// ホーム画面のViewControllerです。
-class HomeViewController: UIViewController, StoryboardInstantiable {
+final class HomeViewController: UIViewController, StoryboardInstantiable {
 
     // MARK: - LifeCycle Method
     
@@ -27,8 +27,8 @@ class HomeViewController: UIViewController, StoryboardInstantiable {
     
     private func bindStyles() {
         // スタート画面に戻るボタンは非表示
+        // 聞いてなさそう
         self.navigationItem.setHidesBackButton(true, animated: false)
-        
     }
     
     private func bindViewModel() {

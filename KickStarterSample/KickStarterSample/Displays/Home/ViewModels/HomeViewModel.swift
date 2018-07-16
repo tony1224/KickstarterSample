@@ -8,7 +8,20 @@
 
 import UIKit
 
+protocol HomeViewModelInputs {
+    func
+}
+
+protocol HomeViewModelOutputs {
+    
+}
+
+protocol HomeViewModelType {
+    var inputs: HomeViewModelInputs { get }
+    var outputs: HomeViewModelOutputs { get }
+}
+
 /// ホーム画面のViewModelです。
-class HomeViewModel: NSObject {
+final class HomeViewModel: HomeViewModelType, HomeViewModelInputs, HomeViewModelOutputs {
 
 }

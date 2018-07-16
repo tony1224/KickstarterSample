@@ -26,6 +26,7 @@
 		53F20B4C20FC78BF0090AE8B /* DetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F20B4B20FC78BF0090AE8B /* DetailViewController.storyboard */; };
 		53F20B4E20FC78CE0090AE8B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F20B4D20FC78CE0090AE8B /* DetailViewController.swift */; };
 		53F3345D20FC7A7F00CE8A20 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F3345C20FC7A7F00CE8A20 /* UIViewControllerExtension.swift */; };
+		53F3346020FC8C9500CE8A20 /* ViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F3345F20FC8C9500CE8A20 /* ViewLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		53F20B4B20FC78BF0090AE8B /* DetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailViewController.storyboard; sourceTree = "<group>"; };
 		53F20B4D20FC78CE0090AE8B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		53F3345C20FC7A7F00CE8A20 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		53F3345F20FC8C9500CE8A20 /* ViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,8 +125,8 @@
 		535E7EC320FC5BFD00A49000 /* Displays */ = {
 			isa = PBXGroup;
 			children = (
+				535E7EC520FC5C0A00A49000 /* MiainTabbar */,
 				535E7EC420FC5C0400A49000 /* Start */,
-				535E7EC520FC5C0A00A49000 /* MiainTab */,
 				535E7EC620FC5C2300A49000 /* Home */,
 				535E7EC820FC5C3900A49000 /* Detail */,
 				535E7EC720FC5C2F00A49000 /* Settings */,
@@ -141,12 +143,12 @@
 			path = Start;
 			sourceTree = "<group>";
 		};
-		535E7EC520FC5C0A00A49000 /* MiainTab */ = {
+		535E7EC520FC5C0A00A49000 /* MiainTabbar */ = {
 			isa = PBXGroup;
 			children = (
 				535E7EC920FC5DE700A49000 /* Views */,
 			);
-			path = MiainTab;
+			path = MiainTabbar;
 			sourceTree = "<group>";
 		};
 		535E7EC620FC5C2300A49000 /* Home */ = {
@@ -266,6 +268,7 @@
 			children = (
 				53F20B4720FC76E90090AE8B /* StoryboardInstantiable.swift */,
 				53F3345C20FC7A7F00CE8A20 /* UIViewControllerExtension.swift */,
+				53F3345F20FC8C9500CE8A20 /* ViewLayout.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53F3346020FC8C9500CE8A20 /* ViewLayout.swift in Sources */,
 				535E7EA620FC547100A49000 /* ViewController.swift in Sources */,
 				535E7EA420FC547100A49000 /* AppDelegate.swift in Sources */,
 				53F20B4420FC74A20090AE8B /* HomeViewDataSource.swift in Sources */,
