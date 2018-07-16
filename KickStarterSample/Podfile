@@ -1,0 +1,40 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Domain' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Domain
+  pod 'APIKit', '~> 3.1'
+  pod 'RxSwift',    '~> 4.0'
+  pod 'RxCocoa',    '~> 4.0'
+  pod 'SwiftLint'
+
+  target 'DomainTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'KickStarterSample' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for KickStarterSample
+  pod 'APIKit', '~> 3.1'
+  pod 'RxSwift',    '~> 4.0'
+  pod 'RxCocoa',    '~> 4.0'
+  pod 'R.swift'
+  pod 'SwiftLint'
+
+  target 'KickStarterSampleTests' do
+    inherit! :search_paths
+    # Pods for testing
+    pod 'RxBlocking', '~> 4.0'
+    pod 'RxTest',     '~> 4.0'
+
+  end
+
+end

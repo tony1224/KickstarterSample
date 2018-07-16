@@ -4,10 +4,33 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>KickStarterSample.xcscheme</key>
+		<key>Domain.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>KickStarterSample.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>535E7E9F20FC547100A49000</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>535E7EB320FC547300A49000</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>53F3347D20FC950700CE8A20</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
